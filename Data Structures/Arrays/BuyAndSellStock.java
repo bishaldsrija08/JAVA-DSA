@@ -5,17 +5,18 @@ public class BuyAndSellStock {
     }
 
     public static int maxProfit(int[] prices) {
-        int minPrice = Integer.MAX_VALUE;
-        int maxProfit = Integer.MIN_VALUE;
-
+        int maxProfit = 0;
+        int buyPrice = Integer.MAX_VALUE;
         for (int i = 0; i < prices.length; i++) {
-            if (prices[i] < minPrice) {
-                minPrice = prices[i];
-            }
-            if (prices[i] > maxProfit) {
-                maxProfit = prices[i];
+            if (prices[i] > buyPrice) {
+                int profit = prices[i] - buyPrice;
+                maxProfit = Math.max(maxProfit, profit);
+            }else{
+                buyPrice = prices[i];
             }
         }
-        return maxProfit - minPrice;
+        return maxProfit;
     }
 }
+// Time Complexity: O(n)
+// Space Complexity: O(1)

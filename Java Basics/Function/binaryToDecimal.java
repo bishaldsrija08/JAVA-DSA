@@ -7,6 +7,7 @@ public class binaryToDecimal {
         int n = sc.nextInt();
         int decimal = binaryToDecimalFn(n);
         System.out.println("Decimal of " + n + " is: " + decimal);
+        sc.close();
     }
 
     public static int binaryToDecimalFn(int n) {

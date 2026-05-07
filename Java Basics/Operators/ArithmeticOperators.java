@@ -11,5 +11,6 @@ public class ArithmeticOperators {
         System.out.println(a*b);
         System.out.println(a/b);
         System.out.println(a%b); // Modulo -> Reminder
+        sc.close();
     }
 }

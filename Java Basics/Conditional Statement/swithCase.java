@@ -33,5 +33,6 @@ public class swithCase {
                 System.out.println("Invalid Input!");
                 break;
         }
+        sc.close();
     }
 }

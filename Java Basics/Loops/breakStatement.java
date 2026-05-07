@@ -11,5 +11,6 @@ public class breakStatement {
             }
             System.out.println(num);
         }
+        sc.close();
     }
 }

@@ -12,5 +12,6 @@ public class reverseOfNumber {
             n = n / 10;
         }
         System.out.println(reverse);
+        sc.close();
     }
 }

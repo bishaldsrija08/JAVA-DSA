@@ -11,6 +11,7 @@ public class factorialOfANumber {
 
         int binomialCoefficient = binomialCoefficient(n, r);
         System.out.println(binomialCoefficient);
+        sc.close();
     }
 
     public static int factorial(int n) {

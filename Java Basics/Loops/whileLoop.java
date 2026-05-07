@@ -11,5 +11,6 @@ public class whileLoop {
             counter++;
         }
         System.out.print(sum);
+        sc.close();
     }
 }

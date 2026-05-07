@@ -16,5 +16,6 @@ public class incomeTaxCalculator {
             tax = income * 0.3f;
             System.out.println("Your tax is: " + tax);
         }
+        sc.close();
     }
 }

@@ -9,5 +9,6 @@ public class oddOrEven {
         } else {
             System.out.println("Odd");
         }
+        sc.close();
     }
 }

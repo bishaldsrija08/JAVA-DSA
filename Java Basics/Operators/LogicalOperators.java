@@ -3,6 +3,6 @@ public class LogicalOperators {
         boolean a = 33>2;
         boolean b = 23>3;
 
-        System.out.println(a);
+        System.out.println(a + " " + b);
     }
 }

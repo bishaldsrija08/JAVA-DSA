@@ -7,10 +7,17 @@ public class Q34 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number: ");
         int n = sc.nextInt();
+        // To display digits forward, we need to reverse the number first
+        int reversed = 0;
         while(n!=0){
-            int digit = n%10;
+            reversed = reversed*10 + n%10;
+            n = n/10;
+        }
+        // Now display the reversed number's digits
+        while(reversed!=0){
+            int digit = reversed%10;
             System.out.println(digit);
-            n=n/10;
+            reversed = reversed/10;
         }
         sc.close();
     }
